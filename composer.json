@@ -1,0 +1,44 @@
+{
+  "name": "haruncpi/laravel-db-backup",
+  "description": "Easily backup your laravel application database!",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "laravel",
+    "laravel backup",
+    "database",
+    "backup",
+    "database backup"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "MD.HARUN-UR-RASHID",
+      "email": "harun.cox@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Haruncpi\\LaravelDbBackup\\": "src"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Haruncpi\\LaravelDbBackup\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
